@@ -2,31 +2,32 @@
 
 ### Model description
 
-[Our model](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h) was pre-trained on 13k hours of youtube (un-label data) and fine-tuned on 250 hours labeled of [VLSP ASR dataset](https://vlsp.org.vn/vlsp2020/eval/asr) on 16kHz sampled speech audio. 
+[Our models](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h) are pre-trained on 13k hours of Vietnamese youtube audio (un-label data) and fine-tuned on 250 hours labeled of [VLSP ASR dataset](https://vlsp.org.vn/vlsp2020/eval/asr) on 16kHz sampled speech audio. 
 
 We use wav2vec2 architecture for the pre-trained model. Follow wav2vec2 paper:
 
 >For the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler.
 
-For fine-tuning phase, wav2Vec2 is fine-tuned using Connectionist Temporal Classification (CTC), which is an algorithm that is used to train neural networks for sequence-to-sequence problems and mainly in Automatic Speech Recognition and handwriting recognition.
+For fine-tuning phase, wav2vec2 is fine-tuned using Connectionist Temporal Classification (CTC), which is an algorithm that is used to train neural networks for sequence-to-sequence problems and mainly in Automatic Speech Recognition and handwriting recognition.
 
 | Model | #params | Pre-training data | Fine-tune data |
 |---|---|---|---|
 | [base]((https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h)) | 95M | 13k hours | 250 hours |
 
-In a formal ASR system, two components are required: acoustic model and language model. Here ctc-wav2vec fine-tuned model working as an acoustic model. For the language model, we provide a [4-grams model](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h/blob/main/vi_lm_4grams.bin.zip) trained on 2GB of spoken text. 
+In a formal ASR system, two components are required: acoustic model and language model. Here ctc-wav2vec fine-tuned model works as an acoustic model. For the language model, we provide a [4-grams model](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h/blob/main/vi_lm_4grams.bin.zip) trained on 2GB of spoken text. 
 
 
-### Benchmark WER result (with 4-grams LM):
+### Benchmark WER result:
 
-| [VIVOS](https://ailab.hcmus.edu.vn/vivos) | [VLSP-T1](https://vlsp.org.vn/vlsp2020/eval/asr) | [VLSP-T2](https://vlsp.org.vn/vlsp2020/eval/asr) |
-|---|---|---|
-| 6.1 | 9.1 | 40.8 |
+| | [VIVOS](https://ailab.hcmus.edu.vn/vivos) | [VLSP-T1](https://vlsp.org.vn/vlsp2020/eval/asr) | [VLSP-T2](https://vlsp.org.vn/vlsp2020/eval/asr) |
+|---|---|---|---|
+|without LM| 10.77 | 13.33 | 51.45 |
+|with 4-grams LM| 6.15 | 9.11 | 40.81 |
 
 
 ### Example usage
 
-When using the model make sure that your speech input is also sampled at 16Khz. Following the Colab link below to use a combination of CTC-wav2vec and 4-grams LM.
+When using the model make sure that your speech input is sampled at 16Khz. Audio length should be shorter than 10s. Following the Colab link below to use a combination of CTC-wav2vec and 4-grams LM.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pVBY46gSoWer2vDf0XmZ6uNV3d8lrMxx?usp=sharing)
 
