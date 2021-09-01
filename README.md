@@ -4,7 +4,7 @@
 
 [Our models](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h) are pre-trained on 13k hours of Vietnamese youtube audio (un-label data) and fine-tuned on 250 hours labeled of [VLSP ASR dataset](https://vlsp.org.vn/vlsp2020/eval/asr) on 16kHz sampled speech audio. 
 
-We use wav2vec2 architecture for the pre-trained model. Follow wav2vec2 paper:
+We use [wav2vec2 architecture](https://ai.facebook.com/blog/wav2vec-20-learning-the-structure-of-speech-from-raw-audio/) for the pre-trained model. Follow wav2vec2 paper:
 
 >For the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler.
 
