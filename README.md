@@ -16,6 +16,7 @@ For fine-tuning phase, wav2vec2 is fine-tuned using Connectionist Temporal Class
 
 In a formal ASR system, two components are required: acoustic model and language model. Here ctc-wav2vec fine-tuned model works as an acoustic model. For the language model, we provide a [4-grams model](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h/blob/main/vi_lm_4grams.bin.zip) trained on 2GB of spoken text. 
 
+Detail of training and fine-tuning process, the audience can follow [fairseq github](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec) and [huggingface blog](https://huggingface.co/blog/fine-tune-wav2vec2-english).
 
 ### Benchmark WER result:
 
