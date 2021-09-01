@@ -68,3 +68,8 @@ transcription = processor.batch_decode(predicted_ids)
 ### Model Parameters License
 
 The ASR model parameters are made available for non-commercial use only, under the terms of the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. You can find details at: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+### Contact 
+
+nguyenvulebinh@gmail.com / binh@vietai.org
+[![Follow](https://img.shields.io/twitter/follow/nguyenvulebinh?style=social)](https://twitter.com/intent/follow?screen_name=nguyenvulebinh)
