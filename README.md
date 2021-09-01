@@ -69,7 +69,25 @@ transcription = processor.batch_decode(predicted_ids)
 
 The ASR model parameters are made available for non-commercial use only, under the terms of the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. You can find details at: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
+### Citation
+
+[![CITE](https://zenodo.org/badge/DOI/10.5281/zenodo.5356039.svg)](https://github.com/vietai/ASR)
+
+```text
+@misc{Thai_Binh_Nguyen_wav2vec2_vi_2021,
+  author = {Thai Binh Nguyen},
+  doi = {10.5281/zenodo.5356039},
+  month = {09},
+  title = {{Vietnamese end-to-end speech recognition using wav2vec 2.0}},
+  url = {https://github.com/vietai/ASR},
+  year = {2021}
+}
+```
+
+**Please CITE** our repo when it is used to help produce published results or is incorporated into other software.
+
 ### Contact 
 
 nguyenvulebinh@gmail.com / binh@vietai.org
+
 [![Follow](https://img.shields.io/twitter/follow/nguyenvulebinh?style=social)](https://twitter.com/intent/follow?screen_name=nguyenvulebinh)
