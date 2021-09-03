@@ -1,5 +1,10 @@
 # Vietnamese end-to-end speech recognition using wav2vec 2.0
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vietnamese-end-to-end-speech-recognition/speech-recognition-on-common-voice-vi)](https://paperswithcode.com/sota/speech-recognition-on-common-voice-vi?p=vietnamese-end-to-end-speech-recognition)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vietnamese-end-to-end-speech-recognition/speech-recognition-on-vivos)](https://paperswithcode.com/sota/speech-recognition-on-vivos?p=vietnamese-end-to-end-speech-recognition)
+
+
 ### Model description
 
 [Our models](https://huggingface.co/nguyenvulebinh/wav2vec2-base-vietnamese-250h) are pre-trained on 13k hours of Vietnamese youtube audio (un-label data) and fine-tuned on 250 hours labeled of [VLSP ASR dataset](https://vlsp.org.vn/vlsp2020/eval/asr) on 16kHz sampled speech audio. 
