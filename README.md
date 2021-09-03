@@ -20,10 +20,10 @@ Detail of training and fine-tuning process, the audience can follow [fairseq git
 
 ### Benchmark WER result:
 
-| | [VIVOS](https://ailab.hcmus.edu.vn/vivos) | [VLSP-T1](https://vlsp.org.vn/vlsp2020/eval/asr) | [VLSP-T2](https://vlsp.org.vn/vlsp2020/eval/asr) |
-|---|---|---|---|
-|without LM| 10.77 | 13.33 | 51.45 |
-|with 4-grams LM| 6.15 | 9.11 | 40.81 |
+| | [VIVOS](https://ailab.hcmus.edu.vn/vivos) | [COMMON VOICE VI](https://paperswithcode.com/dataset/common-voice) | [VLSP-T1](https://vlsp.org.vn/vlsp2020/eval/asr) | [VLSP-T2](https://vlsp.org.vn/vlsp2020/eval/asr) |
+|---|---|---|---|---|
+|without LM| 10.77 | 18.34 | 13.33 | 51.45 |
+|with 4-grams LM| 6.15 | 11.52 | 9.11 | 40.81 |
 
 
 ### Example usage
